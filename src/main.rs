@@ -13,12 +13,11 @@ fn main() {
         Some(last) => last,
         None => {panic!("this is a terrible mistake!");},
     };
-    
+
     if last.is_digit(10) == false && last != 'X' {
         panic!("last letter \"{}\" is not a digit or \"X\"", last);
     }
 
-    let cleaned_isbn = cleaned_isbn.to_string();
-    let sliced_isbn = &cleaned_isbn[..cleaned_isbn.len()-1];
+    let sliced_isbn = (&cleaned_isbn[..cleaned_isbn.len()-1]).to_string();
     println!("sliced_isbn: {}", sliced_isbn);
 }
