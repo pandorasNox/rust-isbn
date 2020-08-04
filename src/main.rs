@@ -47,7 +47,6 @@ impl Isbn {
 fn main() {
     let maybe_isbn = std::env::args().nth(1).expect("no pattern given");
     let cleaned_isbn = maybe_isbn.replace("-", "");
-    let cleaned_isbn_cp = cleaned_isbn.clone();
     // println!("{}", cleaned_isbn);
     // 123456789-X
 
