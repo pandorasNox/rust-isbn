@@ -10,7 +10,4 @@ opt-level = 'z'
 lto = true
 
 [dependencies]
-
-[lib]
-name="isbn"
-path="isbn/src/lib.rs"
+isbn = { package = "rust-crate-isbn", git = "https://github.com/bobaved/rust-crate-isbn", rev = "76d6c680126f07edafa4765e5f421130061b03e1" }
